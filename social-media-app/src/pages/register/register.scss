@@ -1,0 +1,87 @@
+.register {
+  height: 100vh;
+  background-color: rgb(193, 190, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    width: 55%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    min-height: 400px;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      background: linear-gradient(rgb(39, 11, 96, 0.5), rgb(39, 11, 96, 0.5)),
+        url("../../assets/register-image.jpeg") center;
+      background-size: cover;
+      color: white;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      h1 {
+        font-size: 80px;
+        line-height: 80px;
+      }
+
+      span {
+        font-size: 14px;
+      }
+
+      button {
+        width: 50%;
+        padding: 8px;
+        background-color: white;
+        color: rebeccapurple;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        margin-bottom: 25px;
+        color: rgb(125, 123, 123);
+        font-weight: 500;
+        font-size: x-large;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input {
+          border: none;
+          border-bottom: 1px solid gray;
+          padding: 15px 5px;
+        }
+
+        input:focus {
+          outline: none;
+        }
+
+        button {
+          border: none;
+          background-color: purple;
+          color: white;
+          padding: 8px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
