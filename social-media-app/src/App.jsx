@@ -7,6 +7,8 @@ import Navbar from "./components/navbar/Navbar.jsx";
 import LeftBar from "./components/leftbar/LeftBar.jsx";
 import RightBar from "./components/rightbar/RightBar.jsx";
 import "./App.css";
+import { useContext } from "react";
+import { AuthContext } from "./contexts/AuthContext.jsx";
 
 function App() {
   const Layout = () => {
@@ -25,7 +27,8 @@ function App() {
   };
 
   // Checking if user is logged in. If not, login page is rendered
-  const currentUser = true;
+  const { currentUser } = useContext(AuthContext);
+  //const currentUser = true;
 
   const Protected = ({ children }) => {
     if (!currentUser) {
